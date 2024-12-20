@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPC</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container container">
+          <div class="header__logo">
+            <img src="img/header/logo.svg" alt="" />
+          </div>
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="" class="header__menu-link">Наша компания</a>
+                <ul class="header__menu-sublist">
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink">Контакты</a>
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink">О компании</a>
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink">Сертификаты</a>
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink">Вакансии</a>
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink"
+                      >Соглашение <br />
+                      об использовании <br />
+                      персональных данных</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="header__menu-item">
+                <a href="news_list.html" class="header__menu-link">Новости</a>
+                <ul class="header__menu-sublist">
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink">Новостная лента</a>
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink">Мероприятия</a>
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink">Проекты</a>
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink">Мнение экспертов</a>
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink">От вендоров</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__menu-item">
+                <a href="" class="header__menu-link">Решения</a>
+                <ul class="header__menu-sublist">
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink"
+                      >Управление активами</a
+                    >
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink"
+                      >Управление жизненным <br />
+                      циклом изделия (PLM)</a
+                    >
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink"
+                      >Цифровая торговля</a
+                    >
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink"
+                      >Коллективная работа <br />
+                      и документооборот</a
+                    >
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink">Бизнес-аналитика</a>
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink"
+                      >Спортивная аналитика</a
+                    >
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink"
+                      >Хранение и резервное <br />
+                      копирование данных</a
+                    >
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink"
+                      >Построение <br />
+                      ИТ-инфраструктуры</a
+                    >
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink"
+                      >Отраслевые решения</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="header__menu-item">
+                <a href="" class="header__menu-link">Продукты</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="" class="header__menu-link">Услуги</a>
+                <ul class="header__menu-sublist">
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink">Консалтинг</a>
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink"
+                      >Техническая поддержка</a
+                    >
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink"
+                      >Бизнес-приложения <br />
+                      как сервис</a
+                    >
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink"
+                      >HCL Cloud Hosting MSP</a
+                    >
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink">Дистрибьюция</a>
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink"
+                      >Цифровая <br />
+                      трансформация</a
+                    >
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink"
+                      >Коллективная работа <br />
+                      в облаке</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="header__menu-item">
+                <a href="" class="header__menu-link">Вакансии</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__contacts">
+            <div class="header__contacts-tel">
+              <img
+                src="img/header/tel.svg"
+                alt="телефон"
+                class="header__contacts-tel-img"
+              />
+              <a href="tel:+74957819264" class="header__contacts-tel-text">
+                + 7(495) 781-92-64
+              </a>
+            </div>
+            <div class="header__contacts-mail">
+              <img
+                src="img/header/mail.svg"
+                alt="почта"
+                class="header__contacts-mail-img"
+              />
+              <a
+                href="mailto:partner@interprocom.ru"
+                class="header__contacts-mail-text"
+              >
+                partner@interprocom.ru
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="about">
+          <div class="about__image ibg">
+            <img src="img/about/about.svg" alt="" />
+            <div class="about__image-text container">
+              Цифровое взаимодействие стремительно <br />
+              изменяет мир и способы ведения бизнеса!
+            </div>
+          </div>
+          <div class="about__container container">
+            <h1 class="about__title">О Компании <span class="arrow"></span></h1>
+            <div class="about__item">
+              <div class="about__item-title">
+                <span>«</span>Интерпроком<span>»</span> работает на рынке
+                информационных технологий более <span>25</span> лет.
+              </div>
+              <div class="about__item-text">
+                <p>
+                  Мы создаем востребованные цифровые бизнес-решения на основе
+                  <span>инновационных</span> ИТ-технологий отечественных и
+                  мировых производителей.
+                </p>
+                <br />
+                <p>
+                  Наши собственные разработки <span>включены</span> в Реестр
+                  российского ПО.
+                </p>
+                <br />
+                <p>
+                  Реализуем сложные масштабные проекты в крупных компаниях с
+                  учетом индустриальной <span>специфики</span>.
+                </p>
+                <br />
+                <p>
+                  <span>Осуществляем</span> поставки сетевого оборудования,
+                  аппаратных и программных систем.
+                </p>
+                <br />
+                <p>
+                  Оказываем профильные сервисные услуги и техническую поддержку,
+                  ведем проекты по <span>импортозамещению</span>.
+                </p>
+                <br />
+                <p>
+                  У нас более <span>500 клиентов</span> в России и ближнем
+                  зарубежье.
+                </p>
+                <br />
+                <p>
+                  По итогам 2021 года рост объема продаж составил составил
+                  <span>40 %.</span>
+                </p>
+                <br />
+                <p class="last">
+                  Сертификаты <span>международного</span> образца подтверждают
+                  квалификацию наших специалистов.
+                </p>
+                <br />
+                К Вашим услугам компетентная команда и современные методологии.
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="blocks">
+          <div class="blocks__container container">
+            <div class="blocks__items">
+              <div class="blocks__top">
+                <a href="" class="blocks__item">
+                  <div class="blocks__item-textblock">
+                    <h2 class="blocks__item-textblock-title">
+                      Бизнес аналитика
+                    </h2>
+                    <div class="blocks__item-textblock-text">
+                      Применяйте методы аналитики к разнообразным типам данных,
+                      чтобы повысить эффективность маркетинга и продаж,
+                      операционной и финансовой деятельности, прогнозирования и
+                      выстраивания стратегий.
+                    </div>
+                  </div>
+                  <div class="blocks__item-mediablock">
+                    <img src="img/blocks/1.svg" alt="" />
+                  </div>
+                </a>
+                <a href="" class="blocks__item">
+                  <div class="blocks__item-textblock">
+                    <h2 class="blocks__item-textblock-title">
+                      Управление активами
+                    </h2>
+                    <div class="blocks__item-textblock-text">
+                      Повышайте эффективность планирования, управления,
+                      технического обслуживания и использования ресурсов,
+                      оборудования, зданий, торговых площадей и всей
+                      инфраструктуры в течение всего жизненного цикла.
+                    </div>
+                  </div>
+                  <div class="blocks__item-mediablock">
+                    <img src="img/blocks/2.svg" alt="" />
+                  </div>
+                </a>
+                <a href="" class="blocks__item">
+                  <div class="blocks__item-textblock">
+                    <h2 class="blocks__item-textblock-title">
+                      Управление жизненным циклом изделия
+                    </h2>
+                    <div class="blocks__item-textblock-text">
+                      Сокращайте издержки на всех стадиях и повышайте
+                      эффективность капиталовложений путем трансформации
+                      процессов
+                    </div>
+                  </div>
+                  <div class="blocks__item-mediablock">
+                    <img src="img/blocks/3.svg" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="blocks__middle">
+                <a href="" class="blocks__item">
+                  <div class="blocks__item-textblock">
+                    <h2 class="blocks__item-textblock-title">
+                      Коллективная работа и документооборот
+                    </h2>
+                    <div class="blocks__item-textblock-text">
+                      Создавайте условия для более производительной работы
+                      сотрудников, оперативного обмена информацией и принятия
+                      решений.
+                    </div>
+                  </div>
+                  <div class="blocks__item-mediablock">
+                    <img src="img/blocks/4.svg" alt="" />
+                  </div>
+                </a>
+                <a href="" class="blocks__item">
+                  <div class="blocks__item-textblock">
+                    <h2 class="blocks__item-textblock-title">
+                      Хранение и резервное копирование данных
+                    </h2>
+                    <div class="blocks__item-textblock-text">
+                      Обеспечивайте хранение и защиту своих данных на самом
+                      высоком уровне. Размер предприятия не имеет значения. Мы
+                      подберем решение под ваши требования.
+                    </div>
+                  </div>
+                  <div class="blocks__item-mediablock">
+                    <img src="img/blocks/5.svg" alt="" />
+                  </div>
+                </a>
+                <a href="" class="blocks__item">
+                  <div class="blocks__item-textblock">
+                    <h2 class="blocks__item-textblock-title">
+                      Построение IT-инфраструктуры
+                    </h2>
+                    <div class="blocks__item-textblock-text">
+                      Создавайте и модернизируйте ИТ-инфраструктуру на основе
+                      передовых технологий, чтобы обеспечивать надежную и
+                      бесперебойную работу бизнес-приложений в режиме 24х7.
+                    </div>
+                  </div>
+                  <div class="blocks__item-mediablock">
+                    <img src="img/blocks/6.svg" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="blocks__bottom">
+                <a href="" class="blocks__item">
+                  <div class="blocks__item-textblock">
+                    <h2 class="blocks__item-textblock-title">
+                      Услуги и сервисы
+                    </h2>
+                    <div class="blocks__item-textblock-text">
+                      Используйте знания и опыт наших специалистов, лучшие
+                      методики и практики для разработки ИТ-стратегии, внедрения
+                      проектов и сопровождения систем, оказания технической
+                      поддержки.
+                    </div>
+                  </div>
+                  <div class="blocks__item-mediablock">
+                    <img src="img/blocks/7.svg" alt="" />
+                  </div>
+                </a>
+                <a href="" class="blocks__item">
+                  <div class="blocks__item-textblock">
+                    <h2 class="blocks__item-textblock-title">
+                      Отраслевые решения
+                    </h2>
+                    <div class="blocks__item-textblock-text">
+                      Оптимизируйте работу бизнес-подразделений с учетом
+                      отраслевой специфики. Автоматизируйте бизнес-процессы,
+                      используя современные методологии и передовой опыт коллег
+                      по индустрии.
+                    </div>
+                  </div>
+                  <div class="blocks__item-mediablock">
+                    <img src="img/blocks/8.svg" alt="" />
+                  </div>
+                </a>
+                <a href="" class="blocks__item">
+                  <div class="blocks__item-textblock">
+                    <h2 class="blocks__item-textblock-title">
+                      Спортивная аналитика
+                    </h2>
+                    <div class="blocks__item-textblock-text">
+                      Откройте потенциал цифровых технологий для яркого и
+                      качественно нового формата освещения спортивных
+                      соревнований. Повышайте профессионализм.
+                    </div>
+                  </div>
+                  <div class="blocks__item-mediablock">
+                    <img src="img/blocks/9.svg" alt="" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="projects">
+          <div class="projects__container container">
+            <h1 class="projects__title">
+              Наши проекты<span class="arrow"></span>
+            </h1>
+            <div class="projects__body">
+              <div class="projects__left">
+                <div class="projects__left-item">
+                  <div class="projects__left-item-img ibg">
+                    <img src="img/projects/1.svg" alt="" />
+                  </div>
+                  <div class="projects__left-item-title">«Аксиома 3.0»</div>
+                  <div class="projects__left-item-text">
+                    новая версия платформы корпоративного уровня для управления
+                    материальными активами любой сложности, недвижимостью и ТОиР
+                  </div>
+                </div>
+              </div>
+              <div class="projects__right">
+                <div class="projects__right-top">
+                  <div class="projects__right-top-item">
+                    <div class="projects__right-top-item-img">
+                      <img src="img/projects/2.svg" alt="" />
+                    </div>
+                    <div class="projects__right-top-item-text">
+                      Концерн «Росэнергоатом» переводит системы поддержки
+                      эксплуатации АЭС на российскую платформу «АКСИОМА»
+                    </div>
+                  </div>
+                  <div class="projects__right-top-item">
+                    <div class="projects__right-top-item-img">
+                      <img src="img/projects/3.svg" alt="" />
+                    </div>
+                    <div class="projects__right-top-item-text">
+                      Цифровизация ТОиР Импортозамещение - это “АКСИОМА”!
+                    </div>
+                  </div>
+                  <div class="projects__right-top-item">
+                    <div class="projects__right-top-item-img">
+                      <img src="img/projects/4.svg" alt="" />
+                    </div>
+                    <div class="projects__right-top-item-text">
+                      “Цифровой офис” из которого сотрудники не захотят уходить
+                    </div>
+                  </div>
+                </div>
+                <div class="projects__right-bottom">
+                  <div class="projects__right-bottom-item">
+                    <div class="projects__right-bottom-item-img">
+                      <img src="img/projects/5.svg" alt="" />
+                    </div>
+                    <div class="projects__right-bottom-item-text">
+                      Платформа «АКСИОМА» совместима с российской СУБД Postgres
+                      Pro
+                    </div>
+                  </div>
+                  <div class="projects__right-bottom-item">
+                    <div class="projects__right-bottom-item-img">
+                      <img src="img/projects/6.svg" alt="" />
+                    </div>
+                    <div class="projects__right-bottom-item-text">
+                      Интерпроком авторизован на продажу и оказание сервисных
+                      услуг CAD и PLM-решений АСКОН
+                    </div>
+                  </div>
+                  <div class="projects__right-bottom-item">
+                    <div class="projects__right-bottom-item-img">
+                      <img src="img/projects/7.svg" alt="" />
+                    </div>
+                    <div class="projects__right-bottom-item-text">
+                      Приглашаем на работу руководителя проектов, аналитика,
+                      разработчика на Java, <br />менеджера по продажам,
+                      администратора БД
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="form">
+          <div class="form__container container">
+            <div class="form__body">
+              <div class="form__textblock">
+                <h3 class="form__textblock-title">
+                  ВНЕДРИЛИ МНОГО ИНТЕРЕСНЫХ ПРОЕКТОВ!
+                  <p>СДЕЛАЕМ И ВАШ!</p>
+                </h3>
+                <div class="form__contact">
+                  <div class="form__contact-num">24/7</div>
+                  <div class="form__contact-text">
+                    Есть вопросы?
+                    <span>Пишите на адрес:</span>
+                    partner@interprocom.ru
+                  </div>
+                </div>
+              </div>
+              <div class="form__formblock">
+                <div class="form__formblock-mail">
+                  <div class="form__formblock-mail-text">Электронная почта</div>
+                  <input type="text" class="form__formblock-mail-input" />
+                </div>
+                <div class="form__formblock-message">
+                  <div class="form__formblock-message-text">
+                    Оставьте Ваше сообщение
+                  </div>
+                  <input type="text" class="form__formblock-message-input" />
+                </div>
+                <div class="form__formblock-apply">
+                  Нажимая на кнопку, я даю свое согласие на обработку и хранение
+                  моих данных.
+                </div>
+                <a href="" class="form__formblock-button">Отправить</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container container">
+          <div class="footer__body">
+            <div class="footer__logo">
+              <img src="img/header/logo.svg" alt="" />
+            </div>
+            <nav class="footer__menu">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="" class="footer__menu-link">Новости</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="" class="footer__menu-link">Статьи</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="" class="footer__menu-link">Услуги</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="" class="footer__menu-link">Продукты</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="" class="footer__menu-link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="footer__contact">
+              <div class="footer__contact-tel">
+                <img
+                  src="img/header/tel.svg"
+                  alt="tel"
+                  class="footer__contact-tel-img"
+                />
+                <a href="tel:+74957819264" class="footer__contact-tel-text"
+                  >+ 7(495) 781-92-64</a
+                >
+              </div>
+              <div class="footer__contact-mail">
+                <img
+                  src="img/header/mail.svg"
+                  alt="mail"
+                  class="footer__contact-mail-img"
+                />
+                <a
+                  href="mailto:partner@interprocom.ru"
+                  class="footer__contact-mail-text"
+                  >partner@interprocom.ru</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">© ООО "Интерпроком", 2024</div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/js/index.js"></script>
+  </body>
+</html>

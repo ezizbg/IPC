@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News list</title>
+    <link rel="stylesheet" href="css/news_list.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container container">
+          <div class="header__logo">
+            <img src="img/header/logo.svg" alt="" />
+          </div>
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="index.html" class="header__menu-link">Наша компания</a>
+                <ul class="header__menu-sublist">
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink">Контакты</a>
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink">О компании</a>
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink">Сертификаты</a>
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink">Вакансии</a>
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink"
+                      >Соглашение <br />
+                      об использовании <br />
+                      персональных данных</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="header__menu-item">
+                <a href="" class="header__menu-link">Новости</a>
+                <ul class="header__menu-sublist">
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink">Новостная лента</a>
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink">Мероприятия</a>
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink">Проекты</a>
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink">Мнение экспертов</a>
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink">От вендоров</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__menu-item">
+                <a href="" class="header__menu-link">Решения</a>
+                <ul class="header__menu-sublist">
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink"
+                      >Управление активами</a
+                    >
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink"
+                      >Управление жизненным <br />
+                      циклом изделия (PLM)</a
+                    >
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink"
+                      >Цифровая торговля</a
+                    >
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink"
+                      >Коллективная работа <br />
+                      и документооборот</a
+                    >
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink">Бизнес-аналитика</a>
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink"
+                      >Спортивная аналитика</a
+                    >
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink"
+                      >Хранение и резервное <br />
+                      копирование данных</a
+                    >
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink"
+                      >Построение <br />
+                      ИТ-инфраструктуры</a
+                    >
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink"
+                      >Отраслевые решения</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="header__menu-item">
+                <a href="" class="header__menu-link">Продукты</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="" class="header__menu-link">Услуги</a>
+                <ul class="header__menu-sublist">
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink">Консалтинг</a>
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink"
+                      >Техническая поддержка</a
+                    >
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink"
+                      >Бизнес-приложения <br />
+                      как сервис</a
+                    >
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink"
+                      >HCL Cloud Hosting MSP</a
+                    >
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink">Дистрибьюция</a>
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink"
+                      >Цифровая <br />
+                      трансформация</a
+                    >
+                  </li>
+                  <li class="header__menu-subitem">
+                    <a href="" class="header__menu-sublink"
+                      >Коллективная работа <br />
+                      в облаке</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="header__menu-item">
+                <a href="" class="header__menu-link">Вакансии</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__contacts">
+            <div class="header__contacts-tel">
+              <img
+                src="img/header/tel.svg"
+                alt="телефон"
+                class="header__contacts-tel-img"
+              />
+              <a href="tel:+74957819264" class="header__contacts-tel-text">
+                + 7(495) 781-92-64
+              </a>
+            </div>
+            <div class="header__contacts-mail">
+              <img
+                src="img/header/mail.svg"
+                alt="почта"
+                class="header__contacts-mail-img"
+              />
+              <a
+                href="mailto:partner@interprocom.ru"
+                class="header__contacts-mail-text"
+              >
+                partner@interprocom.ru
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="news">
+          <div class="news__container container">
+            <div class="news__title">НОВОСТИ <span class="arrow"></span></div>
+            <div class="news__body"></div>
+            <div class="news__top">
+              <a href="news.html" class="news__item">
+                <div class="news__item-img">
+                  <img src="img/news/m1.svg" alt="" />
+                </div>
+                <div class="news__item-title">Управление ТОиР</div>
+                <div class="news__item-text">
+                  Что происходит в области управления производственными
+                  активами? Насколько успешно идет импортозамещение? Какие
+                  результаты дает внедрение современных ТОиР-решений?
+                </div>
+                <div class="news__item-bottom">
+                  <div class="news__item-bottom-img">
+                    <img src="img/news/w1.svg" alt="" />
+                  </div>
+                  <div class="news__item-bottom-name">Анна Попова</div>
+                  <div class="news__item-bottom-date">03 март 2023</div>
+                </div>
+              </a>
+              <div class="news__item news__item-2">
+                <div class="news__item-img">
+                  <img src="img/news/m2.svg" alt="" />
+                </div>
+                <div class="news__item-title news__item-title-2 card-title">
+                  «Аксиома» - это 3 в 1
+                </div>
+                <div class="news__item-text card-subtitle">
+                  Одним из ключевых направлений бизнеса компании «Интерпроком»
+                  уже более 15 лет является цифровизация управления активами
+                  предприятий, их техническим обслуживанием и ремонтом.
+                </div>
+                <div class="news__item-bottom">
+                  <div class="news__item-bottom-img">
+                    <img src="img/news/w1.svg" alt="" />
+                  </div>
+                  <div class="news__item-bottom-name">Анна Попова</div>
+                  <div class="news__item-bottom-date">03 март 2023</div>
+                </div>
+              </div>
+              <div class="news__item">
+                <div class="news__item-img">
+                  <img src="img/news/m1.svg" alt="" />
+                </div>
+                <div class="news__item-title">Управление ТОиР</div>
+                <div class="news__item-text">
+                  Что происходит в области управления производственными
+                  активами? Насколько успешно идет импортозамещение? Какие
+                  результаты дает внедрение современных ТОиР-решений?
+                </div>
+                <div class="news__item-bottom">
+                  <div class="news__item-bottom-img">
+                    <img src="img/news/w1.svg" alt="" />
+                  </div>
+                  <div class="news__item-bottom-name">Анна Попова</div>
+                  <div class="news__item-bottom-date">03 март 2023</div>
+                </div>
+              </div>
+              <div class="news__item">
+                <div class="news__item-img">
+                  <img src="img/news/m1.svg" alt="" />
+                </div>
+                <div class="news__item-title">Управление ТОиР</div>
+                <div class="news__item-text">
+                  Что происходит в области управления производственными
+                  активами? Насколько успешно идет импортозамещение? Какие
+                  результаты дает внедрение современных ТОиР-решений?
+                </div>
+                <div class="news__item-bottom">
+                  <div class="news__item-bottom-img">
+                    <img src="img/news/w1.svg" alt="" />
+                  </div>
+                  <div class="news__item-bottom-name">Анна Попова</div>
+                  <div class="news__item-bottom-date">03 март 2023</div>
+                </div>
+              </div>
+            </div>
+            <div class="news__top">
+              <div class="news__item">
+                <div class="news__item-img">
+                  <img src="img/news/m1.svg" alt="" />
+                </div>
+                <div class="news__item-title">Управление ТОиР</div>
+                <div class="news__item-text">
+                  Что происходит в области управления производственными
+                  активами? Насколько успешно идет импортозамещение? Какие
+                  результаты дает внедрение современных ТОиР-решений?
+                </div>
+                <div class="news__item-bottom">
+                  <div class="news__item-bottom-img">
+                    <img src="img/news/w1.svg" alt="" />
+                  </div>
+                  <div class="news__item-bottom-name">Анна Попова</div>
+                  <div class="news__item-bottom-date">03 март 2023</div>
+                </div>
+              </div>
+              <div class="news__item news__item-2">
+                <div class="news__item-img">
+                  <img src="img/news/m2.svg" alt="" />
+                </div>
+                <div class="news__item-title news__item-title-2 card-title">
+                  «Аксиома» - это 3 в 1
+                </div>
+                <div class="news__item-text card-subtitle">
+                  Одним из ключевых направлений бизнеса компании «Интерпроком»
+                  уже более 15 лет является цифровизация управления активами
+                  предприятий, их техническим обслуживанием и ремонтом.
+                </div>
+                <div class="news__item-bottom">
+                  <div class="news__item-bottom-img">
+                    <img src="img/news/w1.svg" alt="" />
+                  </div>
+                  <div class="news__item-bottom-name">Анна Попова</div>
+                  <div class="news__item-bottom-date">03 март 2023</div>
+                </div>
+              </div>
+              <div class="news__item">
+                <div class="news__item-img">
+                  <img src="img/news/m1.svg" alt="" />
+                </div>
+                <div class="news__item-title">Управление ТОиР</div>
+                <div class="news__item-text">
+                  Что происходит в области управления производственными
+                  активами? Насколько успешно идет импортозамещение? Какие
+                  результаты дает внедрение современных ТОиР-решений?
+                </div>
+                <div class="news__item-bottom">
+                  <div class="news__item-bottom-img">
+                    <img src="img/news/w1.svg" alt="" />
+                  </div>
+                  <div class="news__item-bottom-name">Анна Попова</div>
+                  <div class="news__item-bottom-date">03 март 2023</div>
+                </div>
+              </div>
+              <div class="news__item">
+                <div class="news__item-img">
+                  <img src="img/news/m1.svg" alt="" />
+                </div>
+                <div class="news__item-title">Управление ТОиР</div>
+                <div class="news__item-text">
+                  Что происходит в области управления производственными
+                  активами? Насколько успешно идет импортозамещение? Какие
+                  результаты дает внедрение современных ТОиР-решений?
+                </div>
+                <div class="news__item-bottom">
+                  <div class="news__item-bottom-img">
+                    <img src="img/news/w1.svg" alt="" />
+                  </div>
+                  <div class="news__item-bottom-name">Анна Попова</div>
+                  <div class="news__item-bottom-date">03 март 2023</div>
+                </div>
+              </div>
+            </div>
+            <div class="news__top">
+              <div class="news__item">
+                <div class="news__item-img">
+                  <img src="img/news/m1.svg" alt="" />
+                </div>
+                <div class="news__item-title">Управление ТОиР</div>
+                <div class="news__item-text">
+                  Что происходит в области управления производственными
+                  активами? Насколько успешно идет импортозамещение? Какие
+                  результаты дает внедрение современных ТОиР-решений?
+                </div>
+                <div class="news__item-bottom">
+                  <div class="news__item-bottom-img">
+                    <img src="img/news/w1.svg" alt="" />
+                  </div>
+                  <div class="news__item-bottom-name">Анна Попова</div>
+                  <div class="news__item-bottom-date">03 март 2023</div>
+                </div>
+              </div>
+              <div class="news__item news__item-2">
+                <div class="news__item-img">
+                  <img src="img/news/m2.svg" alt="" />
+                </div>
+                <div class="news__item-title news__item-title-2 card-title">
+                  «Аксиома» - это 3 в 1
+                </div>
+                <div class="news__item-text card-subtitle">
+                  Одним из ключевых направлений бизнеса компании «Интерпроком»
+                  уже более 15 лет является цифровизация управления активами
+                  предприятий, их техническим обслуживанием и ремонтом.
+                </div>
+                <div class="news__item-bottom">
+                  <div class="news__item-bottom-img">
+                    <img src="img/news/w1.svg" alt="" />
+                  </div>
+                  <div class="news__item-bottom-name">Анна Попова</div>
+                  <div class="news__item-bottom-date">03 март 2023</div>
+                </div>
+              </div>
+              <div class="news__item">
+                <div class="news__item-img">
+                  <img src="img/news/m1.svg" alt="" />
+                </div>
+                <div class="news__item-title">Управление ТОиР</div>
+                <div class="news__item-text">
+                  Что происходит в области управления производственными
+                  активами? Насколько успешно идет импортозамещение? Какие
+                  результаты дает внедрение современных ТОиР-решений?
+                </div>
+                <div class="news__item-bottom">
+                  <div class="news__item-bottom-img">
+                    <img src="img/news/w1.svg" alt="" />
+                  </div>
+                  <div class="news__item-bottom-name">Анна Попова</div>
+                  <div class="news__item-bottom-date">03 март 2023</div>
+                </div>
+              </div>
+              <div class="news__item">
+                <div class="news__item-img">
+                  <img src="img/news/m1.svg" alt="" />
+                </div>
+                <div class="news__item-title">Управление ТОиР</div>
+                <div class="news__item-text">
+                  Что происходит в области управления производственными
+                  активами? Насколько успешно идет импортозамещение? Какие
+                  результаты дает внедрение современных ТОиР-решений?
+                </div>
+                <div class="news__item-bottom">
+                  <div class="news__item-bottom-img">
+                    <img src="img/news/w1.svg" alt="" />
+                  </div>
+                  <div class="news__item-bottom-name">Анна Попова</div>
+                  <div class="news__item-bottom-date">03 март 2023</div>
+                </div>
+              </div>
+            </div>
+            <nav class="news__nav">
+              <span class="arrow__left"></span>
+              <div class="news__num">
+                <div class="news__num-1">1</div>
+                <div class="news__num-2">2</div>
+                <div class="news__num-3">3</div>
+              </div>
+              <span class="arrow__right"></span>
+            </nav>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container container">
+          <div class="footer__body">
+            <div class="footer__logo">
+              <img src="img/header/logo.svg" alt="" />
+            </div>
+            <nav class="footer__menu">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="" class="footer__menu-link">Новости</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="" class="footer__menu-link">Статьи</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="" class="footer__menu-link">Услуги</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="" class="footer__menu-link">Продукты</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="" class="footer__menu-link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="footer__contact">
+              <div class="footer__contact-tel">
+                <img
+                  src="img/header/tel.svg"
+                  alt="tel"
+                  class="footer__contact-tel-img"
+                />
+                <a href="tel:+74957819264" class="footer__contact-tel-text"
+                  >+ 7(495) 781-92-64</a
+                >
+              </div>
+              <div class="footer__contact-mail">
+                <img
+                  src="img/header/mail.svg"
+                  alt="mail"
+                  class="footer__contact-mail-img"
+                />
+                <a
+                  href="mailto:partner@interprocom.ru"
+                  class="footer__contact-mail-text"
+                  >partner@interprocom.ru</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">© ООО "Интерпроком", 2024</div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/js/news_list.js"></script>
+  </body>
+</html>

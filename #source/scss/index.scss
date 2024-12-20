@@ -1,0 +1,862 @@
+/*Обнуление*/
+* {
+  * {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  *,
+  *:before,
+  *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  :focus,
+  :active {
+    outline: none;
+  }
+  a:focus,
+  a:active {
+    outline: none;
+  }
+  nav,
+  footer,
+  header,
+  aside {
+    display: block;
+  }
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  input,
+  button,
+  textarea {
+    font-family: inherit;
+  }
+  input::-ms-clear {
+    display: none;
+  }
+  button {
+    cursor: pointer;
+  }
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+  a,
+  a:visited {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  ul li {
+    list-style: none;
+  }
+  img {
+    vertical-align: top;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@font-face {
+  font-family: BlackerSans;
+  src: url("/public/fonts/BlackerSans/0_BlackerSansProVariableGX.ttf")
+    format("truetype");
+  src: url("/public/fonts/BlackerSans/0_BlackerSansProVariableGX.woff")
+    format("woff");
+  src: url("/public/fonts/BlackerSans/0_BlackerSansProVariableGX.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: BlackerSansIt;
+  src: url("/public/fonts/BlackerSans/1_BlackerSansProItVariableGX.ttf")
+    format("truetype");
+  src: url("/public/fonts/BlackerSans/1_BlackerSansProItVariableGX.woff")
+    format("woff");
+  src: url("/public/fonts/BlackerSans/1_BlackerSansProItVariableGX.woff2")
+    format("woff2");
+}
+/*------------------------------------------------------------------------------------------------------------------*/
+
+.wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 60px;
+  box-sizing: content-box;
+}
+
+.ibg {
+  position: relative;
+}
+
+.ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+body._pc .header__menu-list > li:hover .header__menu-sublist {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 11;
+  background-color: #ffffff;
+
+  &__container {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(255, 255, 255);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+  }
+
+  &__logo {
+    width: 390px;
+    height: 83px;
+  }
+
+  &__menu {
+    &-sublist {
+      position: absolute;
+      top: 80px;
+      background-color: #fff;
+      padding: 40px 20px;
+      border-radius: 20px;
+
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: all 0.3s ease;
+    }
+
+    &-subitem {
+      &:not(:last-child) {
+        margin: 0 0 15px 0;
+      }
+    }
+
+    &-sublink {
+      color: rgb(0, 0, 0);
+      font-family: BlackerSans, sans-serif;
+      font-size: 16px;
+      font-weight: 162;
+      line-height: 19px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: rgb(255, 145, 52);
+      }
+    }
+  }
+
+  &__menu-list {
+    display: flex;
+
+    & > li {
+      padding: 20px 0;
+    }
+  }
+
+  &__menu-item {
+    &:not(:last-child) {
+      margin: 0 80px 0 0;
+    }
+  }
+
+  &__menu-link {
+    color: rgb(83, 83, 83);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+
+    &:hover {
+      color: rgb(255, 145, 52);
+    }
+  }
+
+  &__contacts {
+    &-tel {
+      display: flex;
+
+      &-img {
+        width: 19px;
+        height: 19px;
+        margin: 0 10px 0 1px;
+      }
+
+      &-text {
+        color: rgb(83, 83, 83);
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19px;
+        margin: 0 0 7px 0;
+      }
+    }
+
+    &-mail {
+      display: flex;
+
+      &-img {
+        width: 23px;
+        height: 23px;
+        margin: 0 7px 0 0;
+      }
+
+      &-text {
+        color: rgb(83, 83, 83);
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19px;
+      }
+    }
+  }
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+.about {
+  margin: 100px 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 880px;
+    height: 0;
+    left: 520px;
+    top: 900px;
+    border: 1px solid rgb(255, 145, 52);
+  }
+
+  &__image {
+    height: 360px;
+
+    &-text {
+      position: relative;
+      color: rgb(255, 255, 255);
+      font-family: BlackerSans, sans-serif;
+      font-size: 35px;
+      font-weight: 162;
+      line-height: 41px;
+      top: 250px;
+      text-shadow: 0px 2px rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  &__container {
+    margin: 50px 0 0 0;
+  }
+
+  &__title {
+    color: rgb(83, 83, 83);
+    font-family: BlackerSans, sans-serif;
+    font-size: 50px;
+    font-weight: 162;
+    line-height: 59px;
+    text-transform: uppercase;
+  }
+
+  .arrow {
+    position: relative;
+    display: inline-block;
+    width: 2px;
+    height: 36px;
+    margin: 0 6.1px;
+    border-radius: 9999px;
+    background-color: rgb(255, 145, 52);
+  }
+
+  .arrow::before,
+  .arrow::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 1px);
+    width: 2px;
+    height: 11px;
+    border-radius: 9999px;
+    background-color: rgb(255, 145, 52);
+    transform-origin: 50% calc(100% - 1px);
+  }
+
+  .arrow::before {
+    transform: rotate(42.5deg);
+  }
+
+  .arrow::after {
+    transform: rotate(-42.5deg);
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      color: rgb(255, 145, 52);
+    }
+
+    &-title {
+      width: 700px;
+
+      font-family: BlackerSans, sans-serif;
+      font-size: 55px;
+      font-weight: 162;
+      line-height: 65px;
+    }
+
+    &-text {
+      width: 955px;
+
+      font-family: BlackerSans, sans-serif;
+      font-size: 18px;
+      font-weight: 162;
+      line-height: 21px;
+
+      p {
+        margin: 0 0 -5px 0;
+      }
+
+      .last {
+        margin: 0 0 35px 0;
+      }
+    }
+  }
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+.blocks {
+  margin: 0 0 100px 0;
+
+  &__top {
+    display: flex;
+    gap: 40px;
+    margin: 0 0 30px 0;
+  }
+
+  &__middle {
+    display: flex;
+    gap: 40px;
+    margin: 0 0 30px 0;
+  }
+
+  &__bottom {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex: 0 1 33.333%;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+    padding: 40px;
+
+    &:hover {
+      .blocks__item-textblock-text {
+        opacity: 1;
+      }
+
+      .blocks__item-mediablock {
+        transition: scale 0.3s ease;
+        scale: 1.15;
+      }
+    }
+
+    &:hover {
+      background: rgb(230, 230, 230);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: -15px;
+      left: 0;
+      background-color: rgb(255, 145, 52);
+    }
+
+    &-textblock {
+      width: 357px;
+
+      &-title {
+        color: rgb(0, 0, 0);
+        font-family: BlackerSans, sans-serif;
+        font-size: 30px;
+        font-weight: 162;
+        line-height: 35px;
+        margin: 0 0 30px 0;
+      }
+
+      &-text {
+        color: rgb(0, 0, 0);
+        font-family: BlackerSans, sans-serif;
+        font-size: 12px;
+        font-weight: 162;
+        line-height: 14px;
+
+        opacity: 0;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+.projects {
+  margin: 0 0 100px 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 880px;
+    height: 0;
+    left: 520px;
+    top: 670px;
+    border: 1px solid rgb(255, 145, 52);
+  }
+
+  &__title {
+    color: rgb(83, 83, 83);
+    font-family: BlackerSans, sans-serif;
+    font-size: 50px;
+    font-weight: 162;
+    line-height: 59px;
+    text-transform: uppercase;
+    margin: 0 0 45px 0;
+  }
+
+  .arrow {
+    position: relative;
+    display: inline-block;
+    width: 2px;
+    height: 36px;
+    margin: 0 6.1px;
+    border-radius: 9999px;
+    background-color: rgb(255, 145, 52);
+    margin: 0 0 0 15px;
+  }
+
+  .arrow::before,
+  .arrow::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 1px);
+    width: 2px;
+    height: 11px;
+    border-radius: 9999px;
+    background-color: rgb(255, 145, 52);
+    transform-origin: 50% calc(100% - 1px);
+  }
+
+  .arrow::before {
+    transform: rotate(42.5deg);
+  }
+
+  .arrow::after {
+    transform: rotate(-42.5deg);
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: flex;
+
+    &-item {
+      width: 419px;
+      border-radius: 30px;
+      position: relative;
+
+      &-img {
+        height: 515px;
+      }
+
+      &-title {
+        position: absolute;
+        top: 390px;
+        left: 30px;
+        width: 367px;
+
+        color: rgb(255, 255, 255);
+        font-family: BlackerSans, sans-serif;
+        font-size: 35px;
+        font-weight: 162;
+        text-transform: uppercase;
+      }
+
+      &-text {
+        position: absolute;
+        top: 440px;
+        left: 30px;
+        width: 367px;
+
+        color: rgb(255, 255, 255);
+        font-family: BlackerSans, sans-serif;
+        font-size: 16px;
+        font-weight: 162;
+      }
+    }
+  }
+
+  &__right {
+    &-top {
+      display: flex;
+      gap: 40px;
+      margin: 0 0 35px 0;
+
+      &-item {
+        width: 420px;
+        height: 240px;
+        border-radius: 30px;
+        position: relative;
+        flex: 0 1 33.333%;
+
+        &-text {
+          position: absolute;
+          top: 20px;
+          left: 30px;
+          width: 378px;
+
+          color: rgb(255, 255, 255);
+          font-family: BlackerSans, sans-serif;
+          font-size: 16px;
+          font-weight: 162;
+          line-height: 19px;
+        }
+      }
+    }
+
+    &-bottom {
+      display: flex;
+      gap: 40px;
+
+      &-item {
+        &:nth-child(1) {
+          .projects__right-bottom-item-text {
+            top: 178px;
+          }
+        }
+
+        width: 420px;
+        height: 240px;
+        border-radius: 30px;
+        position: relative;
+        flex: 0 1 33.333%;
+
+        &-text {
+          position: absolute;
+          top: 160px;
+          left: 30px;
+          width: 360px;
+
+          color: rgb(255, 255, 255);
+          font-family: BlackerSans, sans-serif;
+          font-size: 16px;
+          font-weight: 162;
+          line-height: 19px;
+        }
+      }
+    }
+  }
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+.form {
+  margin: 0 0 100px 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 880px;
+    height: 0;
+    left: 520px;
+    top: 1020px;
+    border: 1px solid rgb(255, 145, 52);
+  }
+
+  &__container {
+    background-image: url(/img/form/bg.svg);
+    background-repeat: no-repeat;
+    height: 969px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    padding: 264px 213px;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__textblock {
+    flex: 0 1 40%;
+    margin: 0 172px 0 0;
+
+    &-title {
+      color: rgb(255, 255, 255);
+      font-family: BlackerSans, sans-serif;
+      font-size: 50px;
+      font-weight: 250;
+      line-height: 59px;
+      width: 442px;
+
+      p {
+        margin: 140px 0 30px 0;
+      }
+    }
+  }
+
+  &__formblock {
+    flex: 0 1 60%;
+
+    width: 880px;
+    height: 442px;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+    padding: 37px 40px;
+
+    &-mail {
+      &-text {
+        color: rgb(0, 0, 0);
+        font-family: BlackerSans, sans-serif;
+        font-size: 16px;
+        font-weight: 162;
+        line-height: 19px;
+        margin: 0 0 10px 0;
+      }
+
+      &-input {
+        width: 800px;
+        height: 50px;
+        box-sizing: border-box;
+        border: 1px solid rgba(83, 83, 83, 0.5);
+        border-radius: 15px;
+        margin: 0 0 20px 0;
+
+        padding: 10px;
+        font-size: 18px;
+      }
+    }
+
+    &-message {
+      &-text {
+        color: rgb(0, 0, 0);
+        font-family: BlackerSans, sans-serif;
+        font-size: 16px;
+        font-weight: 162;
+        line-height: 19px;
+        margin: 0 0 10px 0;
+      }
+
+      &-input {
+        width: 800px;
+        height: 149px;
+        box-sizing: border-box;
+        border: 1px solid rgba(83, 83, 83, 0.5);
+        border-radius: 20px;
+        margin: 0 0 20px 0;
+
+        padding: 10px 10px 100px 10px;
+        font-size: 18px;
+      }
+    }
+
+    &-apply {
+      color: rgb(0, 0, 0);
+      font-family: BlackerSans, sans-serif;
+      font-size: 16px;
+      font-weight: 162;
+      line-height: 19px;
+    }
+
+    &-button {
+      display: inline-block;
+      color: rgb(255, 255, 255);
+      font-family: BlackerSans, sans-serif;
+      font-size: 16px;
+      font-weight: 360;
+      line-height: 19px;
+      text-transform: uppercase;
+
+      border-radius: 15px;
+      background: rgb(255, 145, 52);
+      padding: 10px 64px;
+      margin: 12px 0 0 0;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+
+    &-num {
+      display: inline-block;
+      color: rgb(0, 0, 0);
+      font-family: BlackerSans, sans-serif;
+      font-size: 20px;
+      font-weight: 294;
+      line-height: 24px;
+      margin: 0 23px 0 0;
+
+      padding: 18px 9px;
+      border-radius: 10px;
+      background: rgb(255, 255, 255);
+    }
+
+    &-text {
+      width: 150px;
+      color: rgb(255, 255, 255);
+      font-family: BlackerSans, sans-serif;
+      font-size: 16px;
+      font-weight: 360;
+      line-height: 19px;
+
+      span {
+        font-weight: 162;
+      }
+    }
+  }
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+.footer {
+  margin: 0 0 10px 0;
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 30px 0;
+  }
+
+  &__menu {
+    &-list {
+      display: flex;
+    }
+
+    &-item {
+      &:not(:last-child) {
+        margin: 0 50px 0 0;
+      }
+    }
+
+    &-link {
+      color: rgb(0, 0, 0);
+      font-family: BlackerSans, sans-serif;
+      font-size: 16px;
+      font-weight: 162;
+      line-height: 19px;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+
+    &-tel {
+      &-text {
+        color: rgb(83, 83, 83);
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19px;
+        margin: 0 50px 0 0;
+      }
+    }
+
+    &-mail {
+      &-text {
+        color: rgb(83, 83, 83);
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19px;
+      }
+    }
+  }
+
+  &__bottom {
+    color: rgba(83, 83, 83, 0.7);
+    font-family: BlackerSans, sans-serif;
+    font-size: 16px;
+    font-weight: 162;
+    line-height: 19px;
+    text-align: center;
+  }
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
